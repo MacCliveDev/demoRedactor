@@ -1,0 +1,7 @@
+{
+  "url" : {
+    "dev_api": "https://dev-api.built.io/v4",
+    "my_domian" : "http://demosaml.stag-extension.builtapp.io"
+  },
+  "application_api_key" : "blt2ac652127193ce4b"
+}

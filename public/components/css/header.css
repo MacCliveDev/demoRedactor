@@ -1,0 +1,34 @@
+.wraper {
+  margin: 0 auto;
+}
+
+.main-title {
+  padding: 10px; 
+  padding-bottom: 30px;
+}
+
+.main-title span {
+  font-family: monospace;
+  font-size: -webkit-xxx-large;
+  font-weight: 300;
+  color: aliceblue;
+}
+
+.navbar-right {
+  margin-right: 49px;
+}
+
+/*******************************************************************
+                  Home page Redactor content Styling
+*******************************************************************/ 
+#toolbar-box {
+  position: relative;
+  height: 300px;
+  overflow: auto; 
+  background: #747272;
+  padding: 50px;
+}
+
+.redactor-styles {
+  margin: 0 30px;
+}

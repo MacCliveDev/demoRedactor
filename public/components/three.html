@@ -1,0 +1,15 @@
+<div ui-view="navbar"></div>
+<div ng-controller="threeApp">
+  <div class="container-fluid">
+    <div class="wraper">
+      <div class="main-title div-wrap-center">
+        <span>Redactor with npm angular-redactor </span>				
+      </div>
+      <div>
+        <textarea ng-model="content" redactor="redactConfig">
+        </textarea>
+      </div>
+    </div>
+  </div>
+</div>
+<div ui-view="footer"></div>

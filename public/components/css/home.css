@@ -1,0 +1,74 @@
+html, body {
+  animation: fadein 1s linear;
+}
+
+body {
+  margin-top: 70px;
+  background-color: black;
+}
+
+@keyframes fadein {
+  0% { 
+    opacity: 0; 
+  }
+  50% { 
+    opacity: 0.5; 
+  }
+  100% { 
+    opacity: 1; 
+  }
+}
+
+.header-content {
+	/* background-image: url('.././img/header.jpg'); */
+  /* background-size: cover; */
+  animation: fadein 1s linear;
+}
+
+#navBar {
+  background: white;
+  box-shadow: 1px 2px 10px rgba(136, 136, 136, 0.3);
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0;
+}
+
+img#brandIcon {
+  margin-left: 20px;
+}
+
+.navbar-brand {
+  padding: 0px 0px;
+}
+
+img {
+	height: 41px;
+  padding-right: 11px;
+  padding-top: 10px;
+}
+
+.navbar-brand>img {
+    display: inline-block;
+}
+
+#title{
+	float: right;
+	height: 49px;
+  line-height: 53px;
+  text-align: center;
+}
+
+h1 {
+	font-size: 60px
+}
+
+.div-wrap-center{
+	text-align: center;
+}
+
+#title {
+  color: #3a9fe5;
+  transition-duration: 0.5s;
+}
