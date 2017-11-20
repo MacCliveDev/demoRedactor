@@ -9,6 +9,8 @@ function states($stateProvider, $locationProvider, $urlRouterProvider) {
 	.state('one', state.one)
 	.state('two', state.two)
 	.state('three', state.three)	
+	.state('four', state.four)	
+	
 
 	$urlRouterProvider
 	.otherwise('/home')
@@ -79,25 +81,22 @@ var state = {
 			}	
 		}
 	}
-	// ,
-	// activate : {
-	// 	url : '/Activate',
-	// 	views: 
-	// 	{ 
-	// 		'' : {
-	// 			templateUrl : '/components/activate.html',				
-	// 		},
-	// 		'navbar@activate' : {
-	// 			templateUrl : '/components/navbar.html'
-	// 		},
-	// 		'footer@activate' : {
-	// 			templateUrl : '/components/footer.html'
-	// 		},
-	// 		data : {
-	// 			requiredLogin : false
-	// 		}	
-	// 	}
-	// }
+	,
+	four : {
+		url : '/four',
+		views: 
+		{ 
+			'' : {
+				templateUrl : '/components/four.html',				
+			},
+			'navbar@activate' : {
+				templateUrl : '/components/navbar.html'
+			},
+			data : {
+				requiredLogin : false
+			}	
+		}
+	}
 }
 
 
