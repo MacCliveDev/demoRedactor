@@ -15,7 +15,6 @@ module.exports = function (app) {
 				imageUpload: '/upload.php'
 			})
 		}
-
 	}])
 }
 
