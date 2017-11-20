@@ -38993,7 +38993,7 @@ module.exports = angular;
 
 },{"./angular":5}],7:[function(require,module,exports){
 module.exports = function (app) {
-	app.controller('homeApp', [
+	app.controller('fourApp', [
     '$scope', 
     '$state', 
     '$rootScope', 
@@ -39009,6 +39009,23 @@ module.exports = function (app) {
 
 
 },{}],8:[function(require,module,exports){
+module.exports = function (app) {
+	app.controller('homeApp', [
+    '$scope', 
+    '$state', 
+    '$rootScope', 
+    '$cookies', 
+    '$timeout',
+    'getFactory',
+    function($scope, $state, $rootScope, $cookies, $timeout, getFactory) {		
+    	$scope.redactConfig = function () {
+				$('#redactor').redactor()
+			}
+	}])
+}
+
+
+},{}],9:[function(require,module,exports){
 module.exports = function (app) {
 	app.controller('loginApp', [
     '$scope', 
@@ -39028,7 +39045,7 @@ module.exports = function (app) {
 }
 
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 module.exports = function (app) {
 	app.controller('threeApp', [
     '$scope', 
@@ -39045,7 +39062,7 @@ module.exports = function (app) {
 }
 
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 module.exports = function (app) {
 	app.controller('twoApp', [
     '$scope', 
@@ -39066,7 +39083,7 @@ module.exports = function (app) {
 }
 
 
-},{}],11:[function(require,module,exports){
+},{}],12:[function(require,module,exports){
 module.exports = function (app) {
 	app.config(states)
 }
@@ -39171,7 +39188,7 @@ var state = {
 
 
 
-},{}],12:[function(require,module,exports){
+},{}],13:[function(require,module,exports){
 module.exports = function(app) {
 	app.controller('mainApp', 
 	['$scope',
@@ -39181,7 +39198,7 @@ module.exports = function(app) {
 		
 	}])
 }
-},{}],13:[function(require,module,exports){
+},{}],14:[function(require,module,exports){
 module.exports = function (app) {
   app.directive('redactoredit', function () {
     return {
@@ -39191,7 +39208,7 @@ module.exports = function (app) {
     };
   })
 }
-},{}],14:[function(require,module,exports){
+},{}],15:[function(require,module,exports){
 module.exports = function (app) {
 	app.factory('getFactory', [ '$rootScope', '$cookies', '$state', function ($rootScope, $cookies, $state) {
 		return{
@@ -39201,7 +39218,7 @@ module.exports = function (app) {
 		}
 	}])
 }
-},{}],15:[function(require,module,exports){
+},{}],16:[function(require,module,exports){
 var angular 						= require('angular')
 var ui_router 					= require('angular-ui-router')
 var angular_cookies 		= require('angular-cookies')
@@ -39214,7 +39231,7 @@ var home						    = require('./components/js/home/home.js')
 var login 							= require('./components/js/login/login.js')
 var twoApp 					    = require('./components/js/two/two.js')
 var threeApp 						= require('./components/js/three/three.js')
-// var activate 						= require('./components/js/activate/activate.js')
+var fourApp 						= require('./components/js/four/four.js')
 var config							= require('./config.js')
 var controller					= require('./controller.js')
 var factory							= require('./factory.js')
@@ -39233,8 +39250,7 @@ home(app)
 login(app)
 twoApp(app)
 threeApp(app)
-// tasks(app)
-// activate(app)
+fourApp(app)
 config(app)
 
 /*************************************************************************
@@ -39256,7 +39272,7 @@ factory(app)
  * Run
  *************************************************************************/
 run(app)
-},{"./components/js/home/home.js":7,"./components/js/login/login.js":8,"./components/js/three/three.js":9,"./components/js/two/two.js":10,"./config.js":11,"./controller.js":12,"./directives/redactor/redactor.js":13,"./factory.js":14,"./run.js":16,"angular":6,"angular-cookies":2,"angular-redactor":3,"angular-ui-router":4}],16:[function(require,module,exports){
+},{"./components/js/four/four.js":7,"./components/js/home/home.js":8,"./components/js/login/login.js":9,"./components/js/three/three.js":10,"./components/js/two/two.js":11,"./config.js":12,"./controller.js":13,"./directives/redactor/redactor.js":14,"./factory.js":15,"./run.js":17,"angular":6,"angular-cookies":2,"angular-redactor":3,"angular-ui-router":4}],17:[function(require,module,exports){
 module.exports = function(app) {
 	app.run([
 		'$rootScope', 
@@ -39276,4 +39292,4 @@ module.exports = function(app) {
 			})	
 	}])
 }
-},{}]},{},[15]);
+},{}]},{},[16]);
