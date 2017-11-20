@@ -89,7 +89,7 @@ var state = {
 			'' : {
 				templateUrl : '/components/four.html',				
 			},
-			'navbar@activate' : {
+			'navbar@four' : {
 				templateUrl : '/components/navbar.html'
 			},
 			data : {
