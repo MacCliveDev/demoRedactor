@@ -14,6 +14,16 @@
   color: aliceblue;
 }
 
+.notes {
+  margin: 20px;
+}
+
+.notes li {
+  font-family: monospace;  
+  font-size: 10px;
+  color: aliceblue;  
+}
+
 .navbar-right {
   margin-right: 49px;
 }
