@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config ./public/webpack/webpack.config.js"
   },
   "repository": {
     "type": "",
@@ -28,13 +29,15 @@
     "angular-ui-bootstrap": "^2.5.0",
     "angular-ui-router": "^0.4.1",
     "browserify": "^14.4.0",
+    "built.io-browserify": "file:../../../Desktop/built.io-browserify-4.2.0.tgz",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-streamify": "^1.0.2",
     "ngdraggable": "^0.1.10",
     "request": "^2.81.0",
     "rest": "^1.3.2",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^3.11.0"
   },
   "devDependencies": {}
 }

@@ -2,6 +2,7 @@ var angular 						= require('angular')
 var ui_router 					= require('angular-ui-router')
 var angular_cookies 		= require('angular-cookies')
 var angularRedactor     = require('angular-redactor')
+var built               = require('built.io-browserify')
 
 /*************************************************************************
  * JS files required in Index.js
