@@ -29,7 +29,7 @@
     "angular-ui-bootstrap": "^2.5.0",
     "angular-ui-router": "^0.4.1",
     "browserify": "^14.4.0",
-    "built.io-browserify": "file:../../../Desktop/built.io-browserify-4.2.0.tgz",
+    "built.io-browserify": "file:built.io-browserify-4.2.0.tgz",
     "express": "^4.15.3",
     "gulp": "^3.9.1",
     "gulp-streamify": "^1.0.2",
